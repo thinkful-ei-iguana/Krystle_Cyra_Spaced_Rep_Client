@@ -1,4 +1,5 @@
 export default {
-  API_ENDPOINT: 'https://git.heroku.com/espanolingo2.git',
+  
+  API_ENDPOINT: process.env.REACT_APP_API_ENDPOINT || 'http://localhost:8000',
   TOKEN_KEY: 'blogful-client-auth-token',
 }
